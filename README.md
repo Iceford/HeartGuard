@@ -36,7 +36,7 @@
 # 3.APP页面展
 
 ## 3.1 欢迎、注册和登录页面
-<div style="display:flex;">
+<div align="center" style="display:flex;">
     <img src="assets/欢迎页面.jpg" style="width:32%;">
     <div style="width:2%;"></div>
     <img src="assets/注册页面.jpg" style="width:32%;">
@@ -48,7 +48,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首次启动应用时，您将看到欢迎页面，持续3秒或点击右上角"跳过"按钮，即可快速进入监测主页。注册时请使用手机号码，并勾选同意相关政策和隐私协议。
 
 ## 3.2 监测页面
-<div style="display:flex;">
+<div align="center" style="display:flex;">
     <img src="assets/监测主页.jpg" style="width:48%;">
     <div style="width:2%;"></div>
     <img src="assets/测量页面.jpg" style="width:48%;">
@@ -57,7 +57,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;监测主页直观显示用户基本信息和上次测量结果。点击"开始测量"，即可跳转至心率测量页面。
 
-<div style="display:flex;">
+<div align="center" style="display:flex;">
     <img src="assets/实时监测数据.jpg" style="width:48%;">
     <div style="width:2%;"></div>
     <img src="assets/实时心电图.jpg" style="width:48%;">
@@ -66,7 +66,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在测量页面，先连接设备，然后点击"测量"按钮，即可开始心率监测。测量时，心电图、监测指标和倒计时将实时展示。完成后，系统将自动生成并展示测量报告。
 
-<div style="display:flex;">
+<div align="center" style="display:flex;">
     <img src="assets/设备蓝牙连接.jpg"  style="width:28%;">
     <div style="width:2%;"></div>
     <img src="assets/温馨提示.jpg" style="width:28%;">
@@ -75,7 +75,7 @@
 </div>
 
 ## 3.3 报告页面
-<div style="display:flex;">
+<div align="center" style="display:flex;">
     <img src="assets/报告页面.jpg"  style="width:32%;">
     <div style="width:2%;"></div>
     <img src="assets/心率记录.jpg"  style="width:32%;">
@@ -86,7 +86,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报告页面包含心率记录、ECG心电图、健康知识及疾病预防四个部分。心率记录以表格形式展示每次测量的报告。ECG心电图支持左右滑动和缩放，方便查看心电图动态。
 
-<div style="display:flex;">
+<div align="center" style="display:flex;">
     <img src="assets/健康知识.jpg" style="width:32%;">
     <div style="width:2%;"></div>
     <img src="assets/什么是心率.jpg" style="width:32%;">
@@ -99,7 +99,7 @@
 
 ## 3.4 我的页面
 
-<div style="display:flex;">
+<div align="center" style="display:flex;">
     <img src="assets/我的页面.jpg" style="width:32%;">
     <div style="width:2%;"></div>
     <img src="assets/更换头像.jpg" style="width:32%;">
@@ -111,7 +111,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"我的"页面为用户提供了全面控制权，包括个人资料、应用设置和账号管理。用户可以轻松更换头像、更新信息、调整测量设置、升级应用、更改密码、管理账号、清理缓存、提交问题反馈以及安全退出登录。
 
 
-<div style="display:flex;">
+<div align="center" style="display:flex;">
     <img src="assets/测量设置.jpg" style="width:32%;">
     <div style="width:2%;"></div>
     <img src="assets/关于应用.jpg" style="width:32%;">
@@ -126,7 +126,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本应用在运行过程中，将自动生成并存储数据至内置的SQLite数据库，即HeartGuard.db。这些数据经过精心组织，分布在四张结构化的表中，确保了数据的有序性和易于管理。
 
 
-<br>用户信息表（UserInfo）用于存储用户的基本信息。
+<br>**用户信息表**（UserInfo）用于存储用户的基本信息。
 | 列名                | 数据类型 | 说明                         |
 | ------------------- | -------- | ---------------------------- |
 | phone_number        | TEXT     | 主键，电话号码               |
@@ -141,7 +141,7 @@
 | feedback            | TEXT     | 用户的反馈信息               |
 
 
-<br>连接设备表（ConnectedDevices）旨在记录设备与应用程序之间的信息。
+<br>**连接设备表**（ConnectedDevices）旨在记录设备与应用程序之间的信息。
 
 | 列名                 | 数据类型 | 说明                 |
 | -------------------- | -------- | -------------------- |
@@ -151,7 +151,7 @@
 | last_connection_time | INTEGER  | 最后一次连接的时间戳 |
 
 
-<br>实时监测数据表（RealTimeData）用于捕获和存储心率监测中的监测参数。
+<br>**实时监测数据表**（RealTimeData）用于捕获和存储心率监测中的监测参数。
 
 | 列名                     | 数据类型 | 说明                         |
 | ------------------------ | -------- | ---------------------------- |
@@ -163,7 +163,7 @@
 | raw_data_0 ~ raw_data_19 | REAL     | 采集的心电图的原始数据       |
 
 
-<br>测量统计表（MeasurementStatistics）用于存储心率监测的相关统计数据。
+<br>**测量统计表**（MeasurementStatistics）用于存储心率监测的相关统计数据。
 
 | 列名             | 数据类型 | 说明                   |
 | ---------------- | -------- | ---------------------- |
