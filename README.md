@@ -1,20 +1,12 @@
-<!--
- * @Author: WhimsyQuester rongquanhuang01@gmail.com
- * @Date: 2024-05-15 03:37:03
- * @LastEditors: WhimsyQuester rongquanhuang01@gmail.com
- * @LastEditTime: 2024-05-28 11:09:00
- * @FilePath: \HeartGuard\README.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
 # 1.芯森微 KSECG-DK 介绍
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KSECG-DK评估开发板是深圳芯森微电子有限公司推出的基于高精度心电传感芯片KS1081指尖蓝牙心电ECG信号采集评估板。KSECG-DK板集成了KS1081单通道心电芯片和蓝牙5.0处理器(Nordic nRF528XX)以及电源管理系统。用户通过手指触碰评估板上的印制金属电极，或者导联线接入电极实现高精度的心电图ECG信号(R-Q-R-S-T波)采集，并通过蓝牙数据传输和手机端APP软件实现实时人体指尖高保真心电ECG波形显示和信号分析。
 
-![KSECG-DKO1E](assets\KSECG-DKO1E.png)
+![KSECG-DKO1E](assets/KSECG-DKO1E.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KSECG-DK是一款二合一的蓝牙心电评估开发板。支持指尖接触金属电极获取信号，以及支持通过专用心电ECG导联线使用传统AgCI电极或其他织物、金属、导电布电极从人体获取高精度心电ECG信号进行评测。用户可以在官方淘宝店铺购买该产品，购买链接：[KS1081手指心电指尖蓝牙无线ECG开发心率数据采集SDK算法手机app]([淘宝店铺购买链接地址](https://item.taobao.com/item.htm?id=621624018377&spm=a1z10.1-c.w4004-22915527887.4.23164e45hSs0N4))。
 
-![KSECG-DKO1E](assets\KS1081手指心电指尖蓝牙无线ECG开发心率数据采集SDK算法手机app.png)
+![KSECG-DKO1E](assets/KS1081手指心电指尖蓝牙无线ECG开发心率数据采集SDK算法手机app.png)
 
 
 
@@ -45,11 +37,11 @@
 
 ## 3.1 欢迎、注册和登录页面
 <div style="display:flex;">
-    <img src="assets\欢迎页面.jpg" style="width:32%;">
+    <img src="assets/欢迎页面.jpg" style="width:32%;">
     <div style="width:2%;"></div>
-    <img src="assets\注册页面.jpg" style="width:32%;">
+    <img src="assets/注册页面.jpg" style="width:32%;">
     <div style="width:2%;"></div>
-    <img src="assets\登录页面.jpg" style="width:32%;">
+    <img src="assets/登录页面.jpg" style="width:32%;">
 </div>
 <br>
 
@@ -57,49 +49,49 @@
 
 ## 3.2 监测页面
 <div style="display:flex;">
-    <img src="assets\监测主页.jpg" style="width:48%;">
+    <img src="assets/监测主页.jpg" style="width:48%;">
     <div style="width:2%;"></div>
-    <img src="assets\测量页面.jpg" style="width:48%;">
+    <img src="assets/测量页面.jpg" style="width:48%;">
 </div>
 <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;监测主页直观显示用户基本信息和上次测量结果。点击"开始测量"，即可跳转至心率测量页面。
 
 <div style="display:flex;">
-    <img src="assets\实时监测数据.jpg" style="width:48%;">
+    <img src="assets/实时监测数据.jpg" style="width:48%;">
     <div style="width:2%;"></div>
-    <img src="assets\实时心电图.jpg" style="width:48%;">
+    <img src="assets/实时心电图.jpg" style="width:48%;">
 </div>
 <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在测量页面，先连接设备，然后点击"测量"按钮，即可开始心率监测。测量时，心电图、监测指标和倒计时将实时展示。完成后，系统将自动生成并展示测量报告。
 
 <div style="display:flex;">
-    <img src="assets\设备蓝牙连接.jpg"  style="width:28%;">
+    <img src="assets/设备蓝牙连接.jpg"  style="width:28%;">
     <div style="width:2%;"></div>
-    <img src="assets\温馨提示.jpg" style="width:28%;">
+    <img src="assets/温馨提示.jpg" style="width:28%;">
     <div style="width:2%;"></div>
-    <img src="assets\测量报告.jpg"  style="width:40%;">
+    <img src="assets/测量报告.jpg"  style="width:40%;">
 </div>
 
 ## 3.3 报告页面
 <div style="display:flex;">
-    <img src="assets\报告页面.jpg"  style="width:32%;">
+    <img src="assets/报告页面.jpg"  style="width:32%;">
     <div style="width:2%;"></div>
-    <img src="assets\心率记录.jpg"  style="width:32%;">
+    <img src="assets/心率记录.jpg"  style="width:32%;">
     <div style="width:2%;"></div>
-    <img src="assets\ECG心电图.jpg" style="width:32%;">
+    <img src="assets/ECG心电图.jpg" style="width:32%;">
 </div>
 <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报告页面包含心率记录、ECG心电图、健康知识及疾病预防四个部分。心率记录以表格形式展示每次测量的报告。ECG心电图支持左右滑动和缩放，方便查看心电图动态。
 
 <div style="display:flex;">
-    <img src="assets\健康知识.jpg" style="width:32%;">
+    <img src="assets/健康知识.jpg" style="width:32%;">
     <div style="width:2%;"></div>
-    <img src="assets\什么是心率.jpg" style="width:32%;">
+    <img src="assets/什么是心率.jpg" style="width:32%;">
     <div style="width:2%;"></div>
-    <img src="assets\疾病预防.jpg" style="width:32%;">
+    <img src="assets/疾病预防.jpg" style="width:32%;">
 </div>
 <br>
 
@@ -108,11 +100,11 @@
 ## 3.4 我的页面
 
 <div style="display:flex;">
-    <img src="assets\我的页面.jpg" style="width:32%;">
+    <img src="assets/我的页面.jpg" style="width:32%;">
     <div style="width:2%;"></div>
-    <img src="assets\更换头像.jpg" style="width:32%;">
+    <img src="assets/更换头像.jpg" style="width:32%;">
     <div style="width:2%;"></div>
-    <img src="assets\基础信息.jpg" style="width:32%;">
+    <img src="assets/基础信息.jpg" style="width:32%;">
 </div>
 <br>
 
@@ -120,11 +112,11 @@
 
 
 <div style="display:flex;">
-    <img src="assets\测量设置.jpg" style="width:32%;">
+    <img src="assets/测量设置.jpg" style="width:32%;">
     <div style="width:2%;"></div>
-    <img src="assets\关于应用.jpg" style="width:32%;">
+    <img src="assets/关于应用.jpg" style="width:32%;">
     <div style="width:2%;"></div>
-    <img src="assets\版本更新.jpg" style="width:32%;">
+    <img src="assets/版本更新.jpg" style="width:32%;">
 </div>
 <br>
 
