@@ -4,7 +4,7 @@
 
 ![KSECG-DKO1E](assets/KSECG-DKO1E.png)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KSECG-DK是一款二合一的蓝牙心电评估开发板。支持指尖接触金属电极获取信号，以及支持通过专用心电ECG导联线使用传统AgCI电极或其他织物、金属、导电布电极从人体获取高精度心电ECG信号进行评测。用户可以在官方淘宝店铺购买该产品，购买链接：[KS1081手指心电指尖蓝牙无线ECG开发心率数据采集SDK算法手机app]([淘宝店铺购买链接地址](https://item.taobao.com/item.htm?id=621624018377&spm=a1z10.1-c.w4004-22915527887.4.23164e45hSs0N4))。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KSECG-DK是一款二合一的蓝牙心电评估开发板。支持指尖接触金属电极获取信号，以及支持通过专用心电ECG导联线使用传统AgCI电极或其他织物、金属、导电布电极从人体获取高精度心电ECG信号进行评测。用户可以在淘宝店铺购买该产品，商品链接：[KS1081手指心电指尖蓝牙无线ECG开发心率数据采集SDK算法手机app](https://item.taobao.com/item.htm?id=621624018377&spm=a1z10.1-c.w4004-22915527887.4.23164e45hSs0N4)。
 
 ![KSECG-DKO1E](assets/KS1081手指心电指尖蓝牙无线ECG开发心率数据采集SDK算法手机app.png)
 
@@ -13,15 +13,15 @@
 
 # 2.监测指标介绍
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;心率监测中的"HR"、"Rhythm"、"QTc"和"Stress"是心电图分析的一部分，它们代表了心脏功能的不同方面：
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在评估心脏健康和生理状态时，心率（HR）及其衍生指标起着关键作用。心率，即心跳次数每分钟，是心脏活动强度的直接反映。心率变异性（HRV）显示心脏对生理和环境变化的适应性，通过检测心跳间隔的波动来衡量。心电图上的QTc间期，校正后的心室去极化和复极化时间，是不同心率下心脏功能比较的重要指标。压力指数，基于HRV参数，如LF/HF比率，评估自主神经系统活动，反映个体的压力水平。这些指标综合提供了心脏健康和压力状态的全面监测。
 
 (1) [心率](https://baike.baidu.com/item/%E5%BF%83%E7%8E%87/9517637)（HR，Heart rate）
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;心率是指每分钟心跳的次数，用来衡量心脏活动的强度。正常成年人安静状态下的心率一般在60到100次/分钟之间。运动、情绪变化、健康状况等都可以影响心率。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;心率是指心脏收缩跳动的频率和每分钟跳动的次数，正常人平静时（静息心率）每分钟60到100次（60~100bpm(次/分钟)），运动时心跳会加速，心肺功能较好的运动员会比正常人的心跳要慢。
 
 (2) [心率变异性](https://baike.baidu.com/item/%E5%BF%83%E7%8E%87%E5%8F%98%E5%BC%82%E6%80%A7/4437748)（HRV，Heart Rate Variability）
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;心率变异性是指心跳间隔时间的变化，它是心脏适应生理和环境变化能力的一个指标。高的HRV通常被认为是身体健康、恢复能力强的标志，而低的HRV则可能指示压力、疲劳或其他健康问题。HRV是通过测量连续心跳之间的时间间隔（R-R间期）的变异来计算的。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;心率变异性是指逐次心跳周期差异的变化情况，它含有神经体液因素对心血管系统调节的信息，从而判断其对心血管等疾病的病情及预防，可能是预测心脏性猝死和心律失常性事件的一个有价值的指标。
 
 (3) [QTc间期](https://baike.baidu.com/item/QTc%E9%97%B4%E6%9C%9F/5874856)（QTc，QTc interval）
 
@@ -33,7 +33,9 @@
 
 
 
-# 3.APP页面展
+# 3.APP页面展示
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP页面设计直接影响用户体验和功能认知。本应用的主要页面包括欢迎、注册登录、监测、报告和个人主页，旨在提供直观和便捷的使用体验。
 
 ## 3.1 欢迎、注册和登录页面
 <div align="center" style="display:flex;">
@@ -45,9 +47,9 @@
 </div>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首次启动应用时，您将看到欢迎页面，持续3秒或点击右上角"跳过"按钮，即可快速进入监测主页。注册时请使用手机号码，并勾选同意相关政策和隐私协议。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首次启动应用时，您将看到欢迎页面，持续3秒或点击右上角"跳过"按钮，即可快速进入"监测"主页。注册时请使用手机号码，并勾选同意相关政策和隐私协议。
 
-## 3.2 监测页面
+## 3.2 监测主页
 <div align="center" style="display:flex;">
     <img src="assets/监测主页.jpg" style="width:48%;">
     <div style="width:2%;"></div>
@@ -74,7 +76,7 @@
     <img src="assets/测量报告.jpg"  style="width:40%;">
 </div>
 
-## 3.3 报告页面
+## 3.3 报告主页
 <div align="center" style="display:flex;">
     <img src="assets/报告页面.jpg"  style="width:32%;">
     <div style="width:2%;"></div>
@@ -97,7 +99,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;健康知识页面提供与心率相关的丰富资讯，而疾病预防部分则聚焦于心脏健康，提供一系列针对性的预防策略和建议。
 
-## 3.4 我的页面
+## 3.4 我的主页
 
 <div align="center" style="display:flex;">
     <img src="assets/我的页面.jpg" style="width:32%;">
@@ -114,7 +116,7 @@
 <div align="center" style="display:flex;">
     <img src="assets/测量设置.jpg" style="width:32%;">
     <div style="width:2%;"></div>
-    <img src="assets/关于应用.jpg" style="width:32%;">
+    <img src="assets/关于应用.png" style="width:32%;">
     <div style="width:2%;"></div>
     <img src="assets/版本更新.jpg" style="width:32%;">
 </div>
