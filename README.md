@@ -55,7 +55,7 @@
 </div>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;监测主页直观显示用户基本信息和上次测量结果。点击"开始测量"，即可跳转至心率测量页面。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"监测"主页直观显示用户基本信息和上次测量结果。点击"开始测量"，即可跳转至心率测量页面。
 
 <div align="center" style="display:flex;">
     <img src="assets/实时监测数据.jpg" style="width:48%;">
@@ -84,7 +84,7 @@
 </div>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报告页面包含心率记录、ECG心电图、健康知识及疾病预防四个部分。心率记录以表格形式展示每次测量的报告。ECG心电图支持左右滑动和缩放，方便查看心电图动态。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"报告"主页包含心率记录、ECG心电图、健康知识及疾病预防四个部分。心率记录以表格形式展示每次测量的报告。ECG心电图支持左右滑动和缩放，方便查看心电图动态。
 
 <div align="center" style="display:flex;">
     <img src="assets/健康知识.jpg" style="width:32%;">
@@ -108,7 +108,7 @@
 </div>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"我的"页面为用户提供了全面控制权，包括个人资料、应用设置和账号管理。用户可以轻松更换头像、更新信息、调整测量设置、升级应用、更改密码、管理账号、清理缓存、提交问题反馈以及安全退出登录。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"我的"主页为用户提供了全面控制权，包括个人资料、应用设置和账号管理。用户可以轻松更换头像、更新信息、调整测量设置、升级应用、更改密码、管理账号、清理缓存、提交问题反馈以及安全退出登录。
 
 
 <div align="center" style="display:flex;">
