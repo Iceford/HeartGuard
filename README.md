@@ -1,10 +1,10 @@
 # 1.芯森微 KSECG-DK 介绍
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KSECG-DK评估开发板是深圳芯森微电子有限公司推出的基于高精度心电传感芯片KS1081指尖蓝牙心电ECG信号采集评估板。KSECG-DK板集成了KS1081单通道心电芯片和蓝牙5.0处理器(Nordic nRF528XX)以及电源管理系统。用户通过手指触碰评估板上的印制金属电极，或者导联线接入电极实现高精度的心电图ECG信号(R-Q-R-S-T波)采集，并通过蓝牙数据传输和手机端APP软件实现实时人体指尖高保真心电ECG波形显示和信号分析。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KSECG-DK 评估开发板是深圳芯森微电子有限公司推出的基于高精度心电传感芯片 KS1081 指尖蓝牙心电ECG信号采集评估板。KSECG-DK 板集成了 KS1081 单通道心电芯片和蓝牙5.0处理器(Nordic nRF528XX)以及电源管理系统。用户通过手指触碰评估板上的印制金属电极，或者导联线接入电极实现高精度的心电图 ECG 信号(R-Q-R-S-T波)采集，并通过蓝牙数据传输和手机端APP软件实现实时人体指尖高保真心电ECG波形显示和信号分析。
 
 ![KSECG-DKO1E](assets/KSECG-DKO1E.png)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KSECG-DK是一款二合一的蓝牙心电评估开发板。支持指尖接触金属电极获取信号，以及支持通过专用心电ECG导联线使用传统AgCI电极或其他织物、金属、导电布电极从人体获取高精度心电ECG信号进行评测。用户可以在淘宝店铺购买该产品，商品链接：[KS1081手指心电指尖蓝牙无线ECG开发心率数据采集SDK算法手机app](https://item.taobao.com/item.htm?id=621624018377&spm=a1z10.1-c.w4004-22915527887.4.23164e45hSs0N4)。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KSECG-DK 是一款二合一的蓝牙心电评估开发板。支持指尖接触金属电极获取信号，以及支持通过专用心电 ECG 导联线使用传统 AgCI 电极或其他织物、金属、导电布电极从人体获取高精度心电 ECG 信号进行评测。用户可以在淘宝店铺购买该产品，商品链接：[KS1081手指心电指尖蓝牙无线ECG开发心率数据采集SDK算法手机app](https://item.taobao.com/item.htm?id=621624018377&spm=a1z10.1-c.w4004-22915527887.4.23164e45hSs0N4)
 
 ![KSECG-DKO1E](assets/KS1081手指心电指尖蓝牙无线ECG开发心率数据采集SDK算法手机app.png)
 
@@ -13,11 +13,11 @@
 
 # 2.监测指标
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在评估心脏健康和生理状态时，心率（HR）及其衍生指标起着关键作用。心率，即心跳次数每分钟，是心脏活动强度的直接反映。心率变异性（HRV）显示心脏对生理和环境变化的适应性，通过检测心跳间隔的波动来衡量。心电图上的QTc间期，校正后的心室去极化和复极化时间，是不同心率下心脏功能比较的重要指标。压力指数，基于HRV参数，如LF/HF比率，评估自主神经系统活动，反映个体的压力水平。这些指标综合提供了心脏健康和压力状态的全面监测。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在评估心脏健康和生理状态时，心率（HR）及其衍生指标起着关键作用。心率，即心跳次数每分钟，是心脏活动强度的直接反映。心率变异性（HRV）显示心脏对生理和环境变化的适应性，通过检测心跳间隔的波动来衡量。心电图上的QTc间期，校正后的心室去极化和复极化时间，是不同心率下心脏功能比较的重要指标。压力指数，基于HRV参数，如 LF/HF 比率，评估自主神经系统活动，反映个体的压力水平。这些指标综合提供了心脏健康和压力状态的全面监测。
 
 (1) [心率](https://baike.baidu.com/item/%E5%BF%83%E7%8E%87/9517637)（HR，Heart rate）
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;心率是指心脏收缩跳动的频率和每分钟跳动的次数，正常人平静时（静息心率）每分钟60到100次（60~100bpm(次/分钟)），运动时心跳会加速，心肺功能较好的运动员会比正常人的心跳要慢。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;心率是指心脏收缩跳动的频率和每分钟跳动的次数，正常人平静时（静息心率）每分钟60到100次（60~100 bpm(次/分钟)），运动时心跳会加速，心肺功能较好的运动员会比正常人的心跳要慢。
 
 (2) [心率变异性](https://baike.baidu.com/item/%E5%BF%83%E7%8E%87%E5%8F%98%E5%BC%82%E6%80%A7/4437748)（HRV，Heart Rate Variability）
 
@@ -25,11 +25,11 @@
 
 (3) [QTc间期](https://baike.baidu.com/item/QTc%E9%97%B4%E6%9C%9F/5874856)（QTc，QTc interval）
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QT间期是心电图上从QT波段开始到T波段结束的时间，它代表心脏心室去极化和复极化的总时间。QT间期会随心率的变化而变化，因此通常使用QTc值来表示校正后的QT间期，以便在不同心率下进行比较。QTc的异常延长或缩短都可能是心脏疾病的风险因素。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QT 间期是心电图上从QT 波段开始到 T 波段结束的时间，它代表心脏心室去极化和复极化的总时间。QT 间期会随心率的变化而变化，因此通常使用 QTc 值来表示校正后的 QT 间期，以便在不同心率下进行比较。QTc 的异常延长或缩短都可能是心脏疾病的风险因素。
 
 (4) [压力指数]()（Stress）
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;压力指数是通过分析心率变异性来评估个体的压力水平。它基于心率变异性参数，如低频/高频比率(LF/HF比率)等，这些参数可以反映自主神经系统的活动状态。自主神经系统控制着身体的无意识活动，如心跳和呼吸。压力指数较高通常意味着较高的心理或生理压力水平。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;压力指数是通过分析心率变异性来评估个体的压力水平。它基于心率变异性参数，如低频/高频比率(LF/HF 比率)等，这些参数可以反映自主神经系统的活动状态。自主神经系统控制着身体的无意识活动，如心跳和呼吸。压力指数较高通常意味着较高的心理或生理压力水平。
 
 
 
@@ -47,7 +47,7 @@
 </div>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首次启动应用时，您将看到欢迎页面，持续3秒或点击右上角"跳过"按钮，即可快速进入"监测"主页。注册时请使用手机号码，并勾选同意相关政策和隐私协议。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首次启动应用时，您将看到欢迎页面，持续3秒或点击右上角"跳过"按钮，即可快速进入"监测"主页。注册和登录请使用手机号码，并勾选同意相关政策和隐私协议。
 
 ## 3.2 监测主页
 <div align="center" style="display:flex;">
@@ -86,7 +86,7 @@
 </div>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"报告"主页包含心率记录、ECG心电图、健康知识及疾病预防四个部分。心率记录以表格形式展示每次测量的报告。ECG心电图支持左右滑动和缩放，方便查看心电图动态。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"报告"主页包含心率记录、ECG 心电图、健康知识及疾病预防四个部分。心率记录以表格形式展示每次测量的报告。ECG 心电图支持左右滑动和缩放，方便查看心电图动态。
 
 <div align="center" style="display:flex;">
     <img src="assets/健康知识.jpg" style="width:32%;">
@@ -125,7 +125,7 @@
 
 # 3.数据存储
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本应用在运行过程中，将自动生成并存储数据至内置的SQLite数据库，即HeartGuard.db。这些数据分布在四张结构化的表中，确保了数据的有序性和易于管理。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本应用在运行过程中，将自动生成并存储数据至内置的 SQLite 数据库，即 HeartGuard.db。这些数据分布在四张结构化的表中，确保了数据的有序性和易于管理。
 
 
 <br>（1）**用户信息表**（UserInfo）用于存储用户的基本信息。
@@ -178,3 +178,11 @@
 | avg_hrv          | DOUBLE   | 平均心率变异性         |
 | avg_qtc          | DOUBLE   | 平均校正QT间期         |
 | avg_stress       | DOUBLE   | 平均压力               |
+
+# 4.安装包
+## 4.1 通过 [SkyBox](47.121.198.148:1024) 下载
+链接: http://47.121.198.148:1024/share/LnQCMXTbYsfWyMiZymcm <br>
+提取码: GNfA7
+
+## 4.2 在 Repository Releases 下载
+https://github.com/Iceford/HeartGuard/releases
