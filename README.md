@@ -179,10 +179,6 @@
 | avg_qtc          | DOUBLE   | 平均校正QT间期         |
 | avg_stress       | DOUBLE   | 平均压力               |
 
-# 4.安装包
-## 4.1 通过 [SkyBox](47.121.198.148:1024) 下载
+# 4.安装包下载
 链接: http://47.121.198.148:1024/share/LnQCMXTbYsfWyMiZymcm <br>
 提取码: GNfA7
-
-## 4.2 在 Repository Releases 下载
-https://github.com/Iceford/HeartGuard/releases
