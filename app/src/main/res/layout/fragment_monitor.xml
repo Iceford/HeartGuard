@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED">
+
+    <!-- 水平方向的Guideline -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_12_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_45_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_70_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_85_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <!-- 垂直方向的Guideline -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_15_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_25_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_75_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_85_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/user_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_12_percent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- 水平方向的Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_45_percent_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <!-- 垂直方向的Guideline -->
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_25_percent_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_50_percent_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_65_percent_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_75_percent_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_95_percent_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <com.iceford.heartguard.view.CircularRoundImageView
+            android:id="@+id/user_avatar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            app:layout_constraintBottom_toBottomOf="@id/user_info"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_25_percent_user_info"
+            app:layout_constraintStart_toStartOf="@id/user_info"
+            app:layout_constraintTop_toTopOf="@id/user_info"
+            app:srcCompat="@drawable/iv_man_on_a_trail" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/gb2312"
+            android:gravity="start|center_vertical|bottom"
+            android:text="用户:黄荣权"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_45_percent_user_info"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_65_percent_user_info"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_25_percent_user_info"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/user_age"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/gb2312"
+            android:gravity="start|center_vertical"
+            android:text="年龄:22岁"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_50_percent_user_info"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_25_percent_user_info"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_45_percent_user_info" />
+
+        <TextView
+            android:id="@+id/user_height"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/gb2312"
+            android:gravity="start|center_vertical"
+            android:text="身高:168cm"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_75_percent_user_info"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_50_percent_user_info"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_45_percent_user_info" />
+
+        <TextView
+            android:id="@+id/user_weight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/gb2312"
+            android:gravity="start|center_vertical"
+            android:text="体重:68kg"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_75_percent_user_info"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_45_percent_user_info" />
+
+        <Button
+            android:id="@+id/register_or_login"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_rounded_corner_press"
+            android:fontFamily="@font/gb2312"
+            android:gravity="center|bottom"
+            android:text="登录/注册"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_45_percent_user_info"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_95_percent_user_info"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_65_percent_user_info"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/heartbeat_gif"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@drawable/gif_heartbeat"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_45_percent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_85_percent"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_15_percent"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_12_percent" />
+
+
+    <Button
+        android:id="@+id/start_measure"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/button_rounded_corner_press"
+        android:fontFamily="@font/gb2312"
+        android:gravity="center"
+        android:text="开始测量"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/last_measurement_data"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_85_percent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_70_percent">
+
+        <!-- 水平方向的Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_33.3_percent_last_measurement_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.333" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_66.6_percent_last_measurement_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.667" />
+
+        <!-- 垂直方向的Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_3_percent_last_measurement_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_13_percent_last_measurement_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.13" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_50_percent_last_measurement_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_60_percent_last_measurement_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <ImageView
+            android:id="@+id/ic_last_measurement_time"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_33.3_percent_last_measurement_data"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_13_percent_last_measurement_data"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_3_percent_last_measurement_data"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/iv_last_measurement_time" />
+
+        <TextView
+            android:id="@+id/title_last_measurement_time"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:text="  上次测量"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_33.3_percent_last_measurement_data"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_50_percent_last_measurement_data"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_13_percent_last_measurement_data"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--最低心率-->
+
+        <TextView
+            android:id="@+id/tv_last_measurement_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2024-05-20 18:35:45"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.66" />
+
+        <ImageView
+            android:id="@+id/ic_lowest_heart_rate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_33.3_percent_last_measurement_data"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_60_percent_last_measurement_data"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_50_percent_last_measurement_data"
+            app:layout_constraintTop_toTopOf="@id/last_measurement_data"
+            app:srcCompat="@drawable/iv_lowest_heart_rate" />
+
+        <TextView
+            android:id="@+id/tv_lowest_heart_rate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="start|center_vertical"
+            android:text="最低心率：66 bpm"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_33.3_percent_last_measurement_data"
+            app:layout_constraintEnd_toEndOf="@id/last_measurement_data"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_60_percent_last_measurement_data"
+            app:layout_constraintTop_toTopOf="@id/last_measurement_data" />
+
+        <!--平均心率-->
+        <ImageView
+            android:id="@+id/ic_average_heart_rate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_66.6_percent_last_measurement_data"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_60_percent_last_measurement_data"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_50_percent_last_measurement_data"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_33.3_percent_last_measurement_data"
+            app:srcCompat="@drawable/iv_average_heart_rate" />
+
+        <TextView
+            android:id="@+id/tv_average_heart_rate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="start|center_vertical"
+            android:text="平均心率：75.6 bpm"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_66.6_percent_last_measurement_data"
+            app:layout_constraintEnd_toEndOf="@id/last_measurement_data"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_60_percent_last_measurement_data"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_33.3_percent_last_measurement_data" />
+
+        <!--最高心率-->
+        <ImageView
+            android:id="@+id/ic_highest_heart_rate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/last_measurement_data"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_60_percent_last_measurement_data"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_50_percent_last_measurement_data"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_66.6_percent_last_measurement_data"
+            app:srcCompat="@drawable/iv_highest_heart_rate" />
+
+        <TextView
+            android:id="@+id/tv_highest_heart_rate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="start|center_vertical"
+            android:text="最高心率：88 bpm"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/last_measurement_data"
+            app:layout_constraintEnd_toEndOf="@id/last_measurement_data"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_60_percent_last_measurement_data"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_66.6_percent_last_measurement_data" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/test_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/button_rounded_corner_press"
+        android:text="测试页面"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
