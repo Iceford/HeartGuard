@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED">
+
+    <!-- 水平方向的Guideline -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_0_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_5_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_10_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_35_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_40_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_45_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_50_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+
+    <!-- 垂直方向的Guideline -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_5_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_95_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/style_top_bar"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_5_percent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_0_percent">
+
+        <!-- 垂直方向的Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_2.85_percent_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.0285" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_12.85_percent_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1285" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_30_percent_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_70_percent_top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <ImageButton
+            android:id="@+id/return_previous"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:foreground="?selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="@+id/top_bar"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_12.85_percent_top_bar"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_2.85_percent_top_bar"
+            app:layout_constraintTop_toTopOf="@+id/top_bar"
+            app:srcCompat="@drawable/ib_return" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/gb2312"
+            android:gravity="center"
+            android:text="关于应用"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/top_bar"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_70_percent_top_bar"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_30_percent_top_bar"
+            app:layout_constraintTop_toTopOf="@+id/top_bar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/about_us"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline_horizontal_35_percent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_95_percent"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_5_percent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_10_percent"
+        app:srcCompat="@drawable/iv_man_on_a_trail" />
+
+
+    <TextView
+        android:id="@+id/project_repository"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center|bottom"
+        android:text="项目仓库：Iceford/HeartGuard"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline_horizontal_45_percent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_95_percent"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_5_percent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_40_percent" />
+
+
+    <TextView
+        android:id="@+id/contact_me"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center|top"
+        android:text="联系我：rongquanhuang01@gmail.com"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline_horizontal_50_percent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_95_percent"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_5_percent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_45_percent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
