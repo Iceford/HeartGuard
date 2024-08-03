@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F9FE"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/style_top_bar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/return_previous"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:background="?android:attr/selectableItemBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ib_return" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:fontFamily="@font/gb2312"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="基础信息"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/save_update"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="?android:attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:srcCompat="@drawable/ib_save_update" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/personal_information"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/style_basic_information">
+
+
+        <RelativeLayout
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ic_user_name"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/iv_user_name" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/gb2312"
+                android:text="姓名:"
+                android:textColor="#353535"
+                android:textColorHint="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/tv_user_name"
+                android:ellipsize="end"
+                android:fontFamily="@font/gb2312"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#AAAAAA"
+                android:textColorHint="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/user_gender"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="45dp"
+            android:clickable="true"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ic_user_gender"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/iv_user_gender" />
+
+            <TextView
+                android:id="@+id/tv_user_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/gb2312"
+                android:text="性别:"
+                android:textColor="#353535"
+                android:textColorHint="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_user_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/tv_user_gender"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:fontFamily="@font/gb2312"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#AAAAAA"
+                android:textColorHint="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="85dp"
+            android:clickable="true"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ic_user_birthday"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/iv_birthday" />
+
+            <TextView
+                android:id="@+id/tv_user_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/gb2312"
+                android:text="生日:"
+                android:textColor="#353535"
+                android:textColorHint="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_user_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/tv_user_birthday"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:fontFamily="@font/gb2312"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#AAAAAA"
+                android:textColorHint="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/health_information"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/style_basic_information">
+
+
+        <RelativeLayout
+            android:id="@+id/user_height"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ic_user_height"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/iv_height" />
+
+            <TextView
+                android:id="@+id/tv_user_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/gb2312"
+                android:text="身高(cm):"
+                android:textColor="#353535"
+                android:textColorHint="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_user_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/tv_user_height"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:fontFamily="@font/gb2312"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#AAAAAA"
+                android:textColorHint="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/user_weight"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="45dp"
+            android:clickable="true"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ic_user_weight"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/iv_user_weight" />
+
+            <TextView
+                android:id="@+id/tv_user_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/gb2312"
+                android:text="体重(kg):"
+                android:textColor="#353535"
+                android:textColorHint="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_user_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/tv_user_weight"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:fontFamily="@font/gb2312"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#AAAAAA"
+                android:textColorHint="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_wear_pacemaker"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="85dp"
+            android:clickable="true"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ic_user_wear_pacemaker"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/iv_wear_pacemaker" />
+
+            <TextView
+                android:id="@+id/tv_user_wear_pacemaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/gb2312"
+                android:text="是否佩戴起搏器:"
+                android:textColor="#353535"
+                android:textColorHint="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_user_wear_pacemaker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/tv_user_wear_pacemaker"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:fontFamily="@font/gb2312"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#AAAAAA"
+                android:textColorHint="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
