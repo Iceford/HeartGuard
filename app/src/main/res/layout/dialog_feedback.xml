@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/feedback_box"
+        android:layout_width="match_parent"
+        android:background="@drawable/style_feedback_box"
+        android:layout_height="160dp">
+
+        <EditText
+            android:id="@+id/problem_content"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/editext_selector"
+            android:hint="请描述您在使用过程中遇到的问题并留下您的联系方式，以便我们后续更好地帮助你解决问题。"
+            android:textSize="18sp"
+            android:paddingTop="0dp"
+            android:padding="0dp"
+            android:gravity="top"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gb2312"
+            android:textColorHint="@color/black"
+            tools:ignore="Autofill,HardcodedText,TextFields"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+
