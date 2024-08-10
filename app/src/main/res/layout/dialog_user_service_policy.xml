@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/user_service_policy"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/style_user_service_policy"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <TextView
+            android:id="@+id/user_service_policy_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/gb2312"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:text="    欢迎使用便携式心电监测仪及提供的健康风险提示和可能提供的健康咨询服务(以下简称本产品)。您在使用本产品和服务前，请仔细阅读本免责条款。如果您对本免责条款的任何条款表示异议，可以选择不使用本服务;如果您选择继续使用本产品和健康咨询服务，则意味着您将自愿遵守以下原则，并完全服从于本协议(免责声明)的规定:
+\n\n
+  一、本产品在下载专用后(有时需要专用硬件设备共同使用)，经用户自行注册后，并同意本服务协议后即可开始使用。
+\n\n
+
+   二、本产品为广大心血管疾病人群提供了一个便捷的方式，自己使用并了解自身的健康风险，并可以通过移动互联网技术提出服务需求，并且上传相应的硬件设备记录的数据信息，来获得健康咨询反馈。
+\n\n
+
+  三、使用者提供的既往病情信息、个人信息和上传的记录数据信息，均自行操作采集、获取和提供:需要个人确保录入或者上传信息及时、准确，服务提供者将根据此信息和数据做出健康咨询、指导和建议。本产品对包括但不限于下列内容和状况不承担任何责任:
+\n
+(1)使用者提供的信息有误;
+\n
+(2)因个人操作原因造成的数据不正确;
+\n
+(3)因耗材原因造成的数据干扰和异常:
+\n
+(4)因移动终端设备、硬件采集设备和网络异常等原因等造成的各种异常状况;
+\n
+(5)因网络服务器和存储器故障，造成的数据异常和丢失;
+\n
+(6)由上述状况导致错误的咨询结果和建议，及数据和信息的延迟和丢失等。
+\n\n
+
+  四、本产品提供的健康风险提示和可能提供的健康咨询服务，只针对当前的心电图数据提供，而且仅供参考，不作为诊断依据。由此给出的健康风险提咨询结果和就诊建议等只能作为针对当前心电数据信息的参考建议。
+\n\n
+
+  五、使用者提供的所有信息包括个人隐私内容信息，属于使用者自愿提供给本公司及健康咨询提供者。本公司不会恶意向任何第三方公开。使用者与其自己选择的健康咨询提供者之间，对此信息有保护义务的约定。
+\n\n
+
+  六、本产品提供的任何健康风险提示和健康咨询服务和指导建议，都不能代替到医院就诊并获取诊断和治疗。使用者无论在任何状态下，都无需等待本产品的自动回复或者服务提供者的回复后再决定是否就医，都应该选择立即去医院诊治。
+\n\n
+
+  七、使用者自行提供的病情信息，如果被认为其内容包含任何不基于事实、虚构、编造的内容，带有威胁、淫秽、漫骂、非法及带有人身攻击之言论，含有色情、暴力、恐怖内容、含有违背伦理道德内容，涉及违法犯罪的内容，以及其他被认为不恰当的内容，本公司有权进行编辑、删除、直至取消该账户资格，并保留进行法律追究的权利。
+\n\n
+
+  八、使用者在提交的信息中带有个人姓名、身份信息、电子邮箱、联系方式等内容前，应慎重考虑。提交后由此出现被骚扰或其它损失责任自负。
+\n\n
+
+  九、使用健康咨询服务可以由本公司或者特定的健康服务提供者提供。本公司和健康服务提供者为个人及团体客户提供全面的健康管理服务，并于各医疗服务机构以及研究机构合作，通过这些机构提供健康咨询与保健服务。健康档案是记载个人信息、个性化健康数据、健康数据对比分析、家族病史、生活习惯、饮食运动。
+\n\n
+
+  提示:任何关于疾病和健康问题的建议、指导和提示等都不能替代执业医师的面对面诊断。所有健康咨询内容仅供参考，最终以医院诊断结果为准。请谨慎参考，本服务提供方不承担由此引起的任何法律责任。"
+            tools:ignore="HardcodedText" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
