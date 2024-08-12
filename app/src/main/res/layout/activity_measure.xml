@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF00CED1"
+    tools:context=".monitor.MeasureActivity">
+
+    <!-- 水平方向的Guideline-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_0_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_4.375_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04375" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_5_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_10_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_40_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_40.625_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40625" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_74.375_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.74375" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_75_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_90_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_92.5_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.925" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_93.125_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.93125" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_95_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_99.375_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99375" />
+
+    <!-- 垂直方向的Guideline -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_2.85_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0285" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_10_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_30_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_70_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_90_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_97.15_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9715" />
+
+
+    <!--顶部状态栏-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/status_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/style_status_bar"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_2.85_percent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_97.15_percent"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_0_percent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_4.375_percent">
+
+        <!-- 垂直方向的Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_5_percent_status_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_15_percent_status_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_17_percent_status_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.17" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_27_percent_status_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.27" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_29_percent_status_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.29" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_71_percent_status_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.71" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_73_percent_status_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.73" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_83_percent_status_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.83" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_85_percent_status_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_95_percent_status_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <ImageButton
+            android:id="@+id/return_previous"
+            app:srcCompat="@drawable/ib_return"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:background="?android:attr/selectableItemBackground"
+            android:foreground="?selectableItemBackground"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_5_percent_status_bar"
+            app:layout_constraintTop_toTopOf="@id/status_bar"
+            app:layout_constraintBottom_toBottomOf="@id/status_bar"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_15_percent_status_bar"
+            app:layout_constraintDimensionRatio="1:1" />
+
+        <!--用户头像-->
+        <com.iceford.heartguard.view.CircularRoundImageView
+            android:id="@+id/user_avatar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_17_percent_status_bar"
+            app:layout_constraintTop_toTopOf="@id/status_bar"
+            app:layout_constraintBottom_toBottomOf="@id/status_bar"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_27_percent_status_bar"
+            app:layout_constraintDimensionRatio="1:1"
+            app:srcCompat="@drawable/iv_man_on_a_trail" />
+
+        <!--用户名称-->
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="20sp"
+            android:hint="黄荣权"
+            android:textStyle="bold"
+            android:fontFamily="@font/gb2312"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:gravity="start|center_vertical"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_29_percent_status_bar"
+            app:layout_constraintTop_toTopOf="@id/status_bar"
+            app:layout_constraintBottom_toBottomOf="@id/status_bar"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_71_percent_status_bar" />
+
+        <!--设备蓝牙连接状态图标-->
+        <ImageView
+            android:id="@+id/device_bluetooth_state"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_73_percent_status_bar"
+            app:layout_constraintTop_toTopOf="@id/status_bar"
+            app:layout_constraintBottom_toBottomOf="@id/status_bar"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_83_percent_status_bar"
+            app:layout_constraintDimensionRatio="1:1"
+            app:srcCompat="@drawable/iv_bluetooth_off" />
+
+        <!--设备电量状态图标-->
+        <ImageView
+            android:id="@+id/device_battery_status"
+            android:rotation="90"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_85_percent_status_bar"
+            app:layout_constraintTop_toTopOf="@id/status_bar"
+            app:layout_constraintBottom_toBottomOf="@id/status_bar"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_95_percent_status_bar"
+            app:layout_constraintDimensionRatio="1:1"
+            app:srcCompat="@drawable/iv_device_power" />
+
+        <TextView
+            android:id="@+id/device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="0dp"
+            android:hint="设备名称"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="12dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/device_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:hint="设备地址"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="12dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/connect_status"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="25dp"
+            android:text="连接状态"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="10dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/digital_power"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="25dp"
+            android:text="电量"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="10dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/data_status"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/style_realtime_monitor"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_2.85_percent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_97.15_percent"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_5_percent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_40_percent">
+
+        <!-- 水平方向的Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_8_percent_above"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="-0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_25_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_39_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.39" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_45_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_78_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.78" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_88_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.88" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_93_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.93" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_98_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <!-- 垂直方向的Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_5_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_10_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.10" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_15_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_20_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.20" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_25_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_30_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.30" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_40_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.40" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_45_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_50_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_55_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_60_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.60" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_70_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.70" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_75_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_80_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.80" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_85_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_90_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.90" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_95_percent_data_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <!-- 实时心率仪表盘 -->
+        <com.iceford.heartguard.view.HeartRateDashboard
+            android:id="@+id/real_time_heart_rate_dashboard"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:scaleX="0.85"
+            android:scaleY="0.85"
+            app:layout_constraintStart_toStartOf="@id/data_status"
+            app:layout_constraintEnd_toEndOf="@id/data_status"
+            app:layout_constraintTop_toTopOf="@+id/guideline_vertical_8_percent_above"
+            app:layout_constraintBottom_toBottomOf="@id/data_status"/>
+
+        <ImageView
+            android:id="@+id/heartbeat_status"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_40_percent_data_status"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_60_percent_data_status"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_25_percent_data_status"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_45_percent_data_status"
+            app:srcCompat="@drawable/gif_heartbeat" />
+
+
+        <!--节律-->
+        <ImageView
+            android:id="@+id/Rhythm"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_5_percent_data_status"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_15_percent_data_status"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_78_percent_data_status"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_88_percent_data_status"
+            app:srcCompat="@drawable/iv_rhythm" />
+
+        <TextView
+            android:id="@+id/hrv"
+            android:text="HRV"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/gb2312"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:gravity="start|center_vertical"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_15_percent_data_status"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_30_percent_data_status"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_78_percent_data_status"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_88_percent_data_status" />
+
+        <TextView
+            android:id="@+id/hrv_value"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:gravity="right"
+            android:textColor="#686868"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_10_percent_data_status"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_25_percent_data_status"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_88_percent_data_status"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_98_percent_data_status" />
+
+        <TextView
+            android:id="@+id/hrv_unit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="a.u"
+            android:textStyle="bold"
+            android:textColor="#686868"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_25_percent_data_status"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_30_percent_data_status"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_88_percent_data_status"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_93_percent_data_status"/>
+
+
+        <!--心率校正的QT间期-->
+        <ImageView
+            android:id="@+id/corrected_qt_interval"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_40_percent_data_status"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_50_percent_data_status"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_78_percent_data_status"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_88_percent_data_status"
+            app:srcCompat="@drawable/iv_corrected_qt_interval" />
+
+        <TextView
+            android:id="@+id/qtc"
+            android:text="QTc"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/gb2312"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:gravity="start|center_vertical"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_50_percent_data_status"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_60_percent_data_status"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_78_percent_data_status"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_88_percent_data_status"/>
+
+        <TextView
+            android:id="@+id/qtc_value"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:gravity="right"
+            android:textColor="#686868"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_40_percent_data_status"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_55_percent_data_status"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_88_percent_data_status"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_98_percent_data_status"/>
+
+        <TextView
+            android:id="@+id/qtc_unit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="ms"
+            android:textStyle="bold"
+            android:textColor="#686868"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_55_percent_data_status"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_60_percent_data_status"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_88_percent_data_status"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_93_percent_data_status"/>
+
+
+        <!--心脏压力-->
+        <ImageView
+            android:id="@+id/psychological_stress"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_70_percent_data_status"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_80_percent_data_status"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_78_percent_data_status"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_88_percent_data_status"
+            app:srcCompat="@drawable/iv_psychological_stress" />
+
+        <TextView
+            android:id="@+id/stress"
+            android:text="Stress"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/gb2312"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:gravity="start|center_vertical"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_80_percent_data_status"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_95_percent_data_status"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_78_percent_data_status"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_88_percent_data_status" />
+
+        <TextView
+            android:id="@+id/stress_value"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#686868"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_75_percent_data_status"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_85_percent_data_status"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_88_percent_data_status"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_98_percent_data_status"/>
+
+        <TextView
+            android:id="@+id/stress_unit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="a.u"
+            android:textStyle="bold"
+            android:textColor="#686868"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_85_percent_data_status"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90_percent_data_status"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_88_percent_data_status"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_93_percent_data_status"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--实时心电图_竖屏-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/data_receive_portrait"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@drawable/style_data_receive"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_2.85_percent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_97.15_percent"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_40.625_percent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_74.375_percent">
+
+        <!-- 水平方向的Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_0_percent_data_receive_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_12_percent_data_receive_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.12" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_100_percent_data_receive_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1" />
+
+        <!-- 垂直方向的Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_0_percent_data_receive_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_40_percent_data_receive_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.40" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_50_percent_data_receive_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_85_percent_data_receive_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_100_percent_data_receive_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+
+
+        <!-- 沙漏 -->
+        <ImageView
+            android:id="@+id/hourglass"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:src="@drawable/gif_hourglass"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_40_percent_data_receive_portrait"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_50_percent_data_receive_portrait"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_0_percent_data_receive_portrait"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_12_percent_data_receive_portrait"/>
+
+        <!--倒计时秒数-->
+        <TextView
+            android:id="@+id/countdown"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="倒计时"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:fontFamily="@font/gb2312"
+            android:textColor="@color/hrRed"
+            android:gravity="start|center_vertical"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_50_percent_data_receive_portrait"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_85_percent_data_receive_portrait"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_0_percent_data_receive_portrait"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_12_percent_data_receive_portrait"/>
+
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart_portrait"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_0_percent_data_receive_portrait"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_100_percent_data_receive_portrait"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_12_percent_data_receive_portrait"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_100_percent_data_receive_portrait">
+        </com.github.mikephil.charting.charts.LineChart>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--设备蓝牙列表-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/available_device_bluetooth"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@drawable/style_available_device_bluetooth"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_2.85_percent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_97.15_percent"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_40.625_percent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_74.375_percent">
+
+        <!-- 水平方向的Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_0_percent_available_device_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_12_percent_available_device_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.12" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_15_percent_available_device_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_100_percent_available_device_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1" />
+
+        <!-- 垂直方向的Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_0_percent_available_device_bluetooth"
+            android:layout_height="0dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_5_percent_available_device_bluetooth"
+            android:layout_height="0dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_15_percent_available_device_bluetooth"
+            android:layout_height="0dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_95_percent_available_device_bluetooth"
+            android:layout_height="0dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_100_percent_available_device_bluetooth"
+            android:layout_height="0dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+
+        <ImageView
+            android:id="@+id/ic_available_devices"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:srcCompat="@drawable/iv_available_device"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_5_percent_available_device_bluetooth"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_15_percent_available_device_bluetooth"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_0_percent_available_device_bluetooth"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_12_percent_available_device_bluetooth" />
+
+        <TextView
+            android:id="@+id/tv_available_devices"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_15_percent_available_device_bluetooth"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_95_percent_available_device_bluetooth"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_0_percent_available_device_bluetooth"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_12_percent_available_device_bluetooth" />
+
+        <LinearLayout
+            android:id="@+id/device_bluetooth_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_0_percent_available_device_bluetooth"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_100_percent_available_device_bluetooth"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_15_percent_available_device_bluetooth"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_100_percent_available_device_bluetooth">
+
+            <!--设备列表-->
+            <ListView
+                android:id="@+id/device_bluetooth"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--测量报告-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/diagnostic_result"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/style_diagnostic_result"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_92.5_percent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_97.15_percent"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_2.85_percent"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_75_percent">
+
+        <!-- 水平方向的Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_0_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_20_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.20" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_25_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_35_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_45_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_50_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_70_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.70" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_75_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_95_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_100_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1" />
+
+        <!-- 垂直方向的Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_0_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.00" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_10_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_35_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_45_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_50_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_55_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_75_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_100_percent_diagnostic_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1" />
+
+
+
+
+        <!--诊断结果-->
+        <ImageView
+            android:id="@+id/ic_analysis_report"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/iv_analysis_report"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_35_percent_diagnostic_result"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_45_percent_diagnostic_result"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_0_percent_diagnostic_result"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_20_percent_diagnostic_result" />
+
+        <TextView
+            android:id="@+id/measurement_records"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="测量报告"
+            android:textSize="18sp"
+            android:textColor="#06A275"
+            android:gravity="start|center_vertical"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_45_percent_diagnostic_result"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_75_percent_diagnostic_result"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_0_percent_diagnostic_result"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_20_percent_diagnostic_result"/>
+
+        <ImageView
+            android:id="@+id/ic_lowest_heart_rate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:srcCompat="@drawable/iv_lowest_heart_rate"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_0_percent_diagnostic_result"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_10_percent_diagnostic_result"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_25_percent_diagnostic_result"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_45_percent_diagnostic_result" />
+
+        <TextView
+            android:id="@+id/tv_min_hr"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="最低心率: -- bpm"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:gravity="start|center_vertical"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_10_percent_diagnostic_result"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_45_percent_diagnostic_result"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_25_percent_diagnostic_result"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_45_percent_diagnostic_result"/>
+
+        <ImageView
+            android:id="@+id/ic_average_heart_rate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/iv_average_heart_rate"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_0_percent_diagnostic_result"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_10_percent_diagnostic_result"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_50_percent_diagnostic_result"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_70_percent_diagnostic_result" />
+
+        <TextView
+            android:id="@+id/tv_avg_hr"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="14sp"
+            android:text="平均心率: -- bpm"
+            android:textColor="@color/black"
+            android:gravity="start|center_vertical"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_10_percent_diagnostic_result"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_45_percent_diagnostic_result"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_50_percent_diagnostic_result"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_70_percent_diagnostic_result"/>
+
+
+        <ImageView
+            android:id="@+id/ic_highest_heart_rate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/iv_highest_heart_rate"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_0_percent_diagnostic_result"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_10_percent_diagnostic_result"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_75_percent_diagnostic_result"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_95_percent_diagnostic_result" />
+
+        <TextView
+            android:id="@+id/tv_max_hr"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="14sp"
+            android:text="最高心率: -- bpm"
+            android:textColor="@color/black"
+            android:gravity="start|center_vertical"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_10_percent_diagnostic_result"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_45_percent_diagnostic_result"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_75_percent_diagnostic_result"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_95_percent_diagnostic_result"/>
+
+
+        <ImageView
+            android:id="@+id/ic_avg_rhythm"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:srcCompat="@drawable/iv_avg_rhythm"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_45_percent_diagnostic_result"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_55_percent_diagnostic_result"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_25_percent_diagnostic_result"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_45_percent_diagnostic_result" />
+
+        <TextView
+            android:id="@+id/tv_avg_hrv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="14sp"
+            android:text="平均心率变异性: --- a.u"
+            android:textColor="@color/black"
+            android:gravity="start|center_vertical"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_55_percent_diagnostic_result"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_100_percent_diagnostic_result"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_25_percent_diagnostic_result"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_45_percent_diagnostic_result"/>
+
+
+        <ImageView
+            android:id="@+id/ic_avg_qtc"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:srcCompat="@drawable/iv_avg_qtc"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_45_percent_diagnostic_result"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_55_percent_diagnostic_result"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_50_percent_diagnostic_result"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_70_percent_diagnostic_result" />
+
+        <TextView
+            android:id="@+id/tv_avg_qtc"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="14sp"
+            android:text="平均QTc间期: --- ms"
+            android:textColor="@color/black"
+            android:gravity="start|center_vertical"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_55_percent_diagnostic_result"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_100_percent_diagnostic_result"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_50_percent_diagnostic_result"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_70_percent_diagnostic_result"/>
+
+        <ImageView
+            android:id="@+id/ic_avg_stress"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:srcCompat="@drawable/iv_avg_psychological_stress"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_45_percent_diagnostic_result"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_55_percent_diagnostic_result"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_75_percent_diagnostic_result"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_95_percent_diagnostic_result" />
+
+        <TextView
+            android:id="@+id/tv_avg_stress"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="14sp"
+            android:text="平均压力: -- a.u"
+            android:textColor="@color/black"
+            android:gravity="start|center_vertical"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_55_percent_diagnostic_result"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_100_percent_diagnostic_result"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_75_percent_diagnostic_result"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_95_percent_diagnostic_result"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/action_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/style_action_button"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_99.375_percent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_97.15_percent"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_2.85_percent"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_93.125_percent">
+
+        <!-- 水平方向的Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_10_percent_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_90_percent_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <!-- 垂直方向的Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_2.5_percent_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.025" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_22.5_percent_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.225" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_27.5_percent_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.275" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_47.5_percent_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.475" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_52.5_percent_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.525" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_72.5_percent_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.725" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_77.5_percent_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.775" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_97.5_percent_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.975" />
+
+        <Button
+            android:id="@+id/search_device"
+            android:text="搜索"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="@color/black"
+            android:background="@drawable/button_rounded_corner_press"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_2.5_percent_action_button"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_22.5_percent_action_button"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_10_percent_action_button"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_90_percent_action_button"/>
+
+        <!-- 连接按钮 -->
+        <Button
+            android:id="@+id/connect_device"
+            android:text="连接"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="@color/black"
+            android:background="@drawable/button_rounded_corner_press"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_27.5_percent_action_button"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_47.5_percent_action_button"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_10_percent_action_button"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_90_percent_action_button"/>
+
+        <!-- 测量按钮 -->
+        <Button
+            android:id="@+id/start_measure"
+            android:text="测量"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="@color/black"
+            android:background="@drawable/button_rounded_corner_press"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_52.5_percent_action_button"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_72.5_percent_action_button"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_10_percent_action_button"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_90_percent_action_button"/>
+
+        <!-- 断开按钮 -->
+        <Button
+            android:id="@+id/disconnect_device"
+            android:text="断开"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="@color/black"
+            android:background="@drawable/button_rounded_corner_press"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_77.5_percent_action_button"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_97.5_percent_action_button"
+            app:layout_constraintTop_toTopOf="@id/guideline_horizontal_10_percent_action_button"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_90_percent_action_button"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
