@@ -376,7 +376,6 @@ public class MeasureActivity extends AppCompatActivity implements View.OnClickLi
                 // 将bluetoothDevice对象的名称和地址设置到文本视图元素中，以显示当前选中的蓝牙设备的信息
                 deviceName.setText(bluetoothDevice.getName());
                 deviceAddress.setText(bluetoothDevice.getAddress());
-
                 currentSelectedDeviceName = deviceName.getText().toString();
                 // 检查设备是否成功连接过
                 dbHelper.checkDeviceConnectionByPhoneNumber(currentLoginNumber, currentSelectedDeviceName);
