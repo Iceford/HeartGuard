@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/style_dialog_instructions"
+    android:gravity="center">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/kind_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="温馨提示"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/gb2312"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/prompt_words"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="①测量过程中请保持双肩、手臂、手指自然放松。\n②为了确保测量数据的准确性，请不要移动手指!\n③测量正式开始前，你有5秒钟的时间调整好姿势。"
+        android:textSize="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <ImageView
+        android:id="@+id/usage_diagram"
+        android:layout_width="336.6dp"
+        android:layout_height="222.2dp"
+        android:src="@drawable/hint_usage_diagram" />
+
+    <Button
+        android:id="@+id/close_prompt"
+        android:layout_width="336.6dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_rounded_corner_press"
+        android:text="确定"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:fontFamily="@font/gb2312"
+        android:textColor="@color/black"/>
+</LinearLayout>
