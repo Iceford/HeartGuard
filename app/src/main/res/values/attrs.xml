@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 仪表盘自定义属性 -->
+    <attr name="color_dial_lower" format="color"/>
+    <attr name="color_dial_middle" format="color"/>
+    <attr name="color_dial_high" format="color"/>
+    <attr name="text_size_dial" format="dimension"/>
+    <attr name="stroke_width_dial" format="dimension"/>
+    <attr name="radius_circle_dial" format="dimension"/>
+    <attr name="text_title_dial" format="string"/>
+    <attr name="text_title_size" format="dimension"/>
+    <attr name="text_title_color" format="color"/>
+    <attr name="text_size_value" format="dimension"/>
+    <attr name="animator_play_time" format="integer"/>
+
+    <declare-styleable name="ClockView">
+        <attr name="color_dial_lower"/>
+        <attr name="color_dial_middle"/>
+        <attr name="color_dial_high"/>
+        <attr name="text_size_dial"/>
+        <attr name="stroke_width_dial"/>
+        <attr name="radius_circle_dial"/>
+        <attr name="text_title_dial"/>
+        <attr name="text_title_size"/>
+        <attr name="text_title_color"/>
+        <attr name="text_size_value"/>
+        <attr name="animator_play_time"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="CircleView">
+        <attr name="circle_divider_width" format="dimension" />
+        <attr name="circle_normal_gray" format="color" />
+
+        <attr name="circle_out_indicator_size" format="dimension" />
+
+        <attr name="circle_title_size" format="dimension" />
+        <attr name="circle_content_size" format="dimension" />
+        <attr name="circle_unit_size" format="dimension" />
+        <attr name="circle_alert_size" format="dimension" />
+
+        <attr name="circle_center_out" format="dimension" />
+        <attr name="circle_center_middle" format="dimension" />
+        <attr name="circle_center_inside" format="dimension" />
+
+        <attr name="circle_indicator_center" format="color" />
+        <attr name="circle_indicator_light" format="color" />
+        <attr name="circle_indicator_gray" format="color" />
+
+        <attr name="circle_title" format="color" />
+        <attr name="circle_content" format="color" />
+        <attr name="circle_unit" format="color" />
+        <attr name="circle_alert" format="color" />
+    </declare-styleable>
+
+    <!-- Line Indicator -->
+    <declare-styleable name="LineIndicator">
+        <attr name="lineAlertColor" format="color|reference" />
+        <attr name="lineAlertSize" format="dimension" />
+        <attr name="lineProgressBackground" format="color" />
+        <attr name="lineProgressColor" format="color" />
+        <attr name="lineIndicatorTextSize" format="dimension" />
+        <attr name="lineIndicatorTextColor" format="color" />
+        <attr name="lineIndicatorBackground" format="color" />
+
+    </declare-styleable>
+
+    <declare-styleable name="RoundIndicatorView">
+        <!--最大数值-->
+        <attr name="maxNum" format="integer"/>
+        <!--圆盘起始角度-->
+        <attr name="startAngle" format="integer"/>
+        <!--圆盘扫过的角度-->
+        <attr name="sweepAngle" format="integer"/>
+    </declare-styleable>
+</resources>
