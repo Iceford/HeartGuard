@@ -1,16 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iceford.heartguard"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 应用程序需要使用蓝牙功能 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <!-- 声明蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <!-- 启动设备发现或操作蓝牙设置的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+
+    <!-- 应用程序需要读取和写入外部存储器的权限 -->
+    <!--Android 10以上系统，需要ACCESS_FINE_LOCATION-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--Android 9以及一下系统，需要ACCESS_FINE_LOCATION-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!--存取权限-->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!--网络权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--相机权限-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 读写文件权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
+        android:requestLegacyExternalStorage="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HeartGuard"
-        tools:targetApi="31" />
+        tools:targetApi="31">
+
+        <!-- Android7.0以后读取文件需要配置Provider -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.iceford.heartguard.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- 元数据 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.iceford.heartguard.HomePageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iceford.heartguard.auth.RegisterLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iceford.heartguard.profile.AboutApplicationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.iceford.heartguard.profile.BaseInformationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.iceford.heartguard.profile.VersionUpdateActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.iceford.heartguard.profile.MeasureSettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.iceford.heartguard.report.HeartRateRecordActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name="com.iceford.heartguard.report.HealthKnowledgeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.iceford.heartguard.report.DiseasePreventionActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.iceford.heartguard.report.ECGImageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.iceford.heartguard.report.knowledge.What_Is_Heart_Rate_Activity" />
+        <activity android:name="com.iceford.heartguard.report.knowledge.Factors_Affecting_Heart_Rate_Activity" />
+        <activity android:name="com.iceford.heartguard.report.knowledge.Resting_Heart_Rate_Activity" />
+        <activity android:name="com.iceford.heartguard.report.knowledge.Target_Heart_Rate_Activity" />
+        <activity android:name="com.iceford.heartguard.report.knowledge.High_Heart_Rate_Complications_Activity" />
+        <activity android:name="com.iceford.heartguard.report.knowledge.Children_Heart_Rate_Zones_Activity" />
+
+
+        <activity
+            android:name="com.iceford.heartguard.WelcomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.iceford.heartguard.monitor.MeasureActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value=""/>
+        </activity>
+
+
+    </application>
 
 </manifest>
