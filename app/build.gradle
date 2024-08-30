@@ -1,38 +1,56 @@
+// 声明所使用的Gradle插件
 plugins {
-    alias(libs.plugins.android.application)
+    id 'com.android.application'
 }
 
+// 包含了Android项目的配置信息
 android {
+    // 命名空间，指定应用程序的包名
     namespace 'com.iceford.heartguard'
+    // 指定所使用的编译版本的API级别
     compileSdk 34
 
+    // 默认配置项，包含了一些基本的应用程序配置
     defaultConfig {
+        // 应用程序的包名
         applicationId "com.iceford.heartguard"
-        minSdk 24
+        // 应用程序的最低API级别
+        minSdk 29
+        // 应用程序的目标API级别
         targetSdk 34
+        // 应用程序的版本号和版本名
         versionCode 1
-        versionName "1.0"
-
+        versionName "1.4.5"
+        // 指定用于运行测试的测试运行器
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // 指定NDK的配置信息
+        ndk {
+            //noinspection ChromeOsAbiSupport
+            abiFilters 'armeabi', 'armeabi-v7a', ',mips', 'x86'
+        }
     }
 
+    // 构建类型配置，包含了不同构建类型的设置
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled false  // 是否启用代码缩减和混淆
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
 dependencies {
-
-    implementation libs.appcompat
-    implementation libs.material
-    testImplementation libs.junit
-    androidTestImplementation libs.ext.junit
-    androidTestImplementation libs.espresso.core
+    implementation fileTree(dir: "libs")
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation 'com.contrarywind:Android-PickerView:3.2.7'
+    implementation 'androidx.test.ext:junit:1.1.5'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'junit:junit:4.13.2'
 }

@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="blue">#2196F3</color>
+    <color name="theme_color">#FF00CED1</color>
+    <color name="purple">#8900FF</color>
+    <color name="hrRed">#DD2C00</color>
+    <color name="colorPrimary">#FF00CED1</color>
+    <color name="colorAccent">#FFFCB830</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
 </resources>
