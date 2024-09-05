@@ -1,45 +1,46 @@
-# 1.芯森微 KSECG-DK 介绍
+# 1.Introduction of Kingsense KSECG-DK
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KSECG-DK 评估开发板是深圳芯森微电子有限公司推出的基于高精度心电传感芯片 KS1081 指尖蓝牙心电ECG信号采集评估板。KSECG-DK 板集成了 KS1081 单通道心电芯片和蓝牙5.0处理器(Nordic nRF528XX)以及电源管理系统。用户通过手指触碰评估板上的印制金属电极，或者导联线接入电极实现高精度的心电图 ECG 信号(R-Q-R-S-T波)采集，并通过蓝牙数据传输和手机端APP软件实现实时人体指尖高保真心电ECG波形显示和信号分析。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KSECG-DK Evaluation and Development Board is based on the high-precision ECG sensing chip KS1081 fingertip bluetooth ECG signal acquisition evaluation board launched by the Shenzhen Kingsense Electronics Co., Ltd. KSECG-DK board integrates KS1081 single-channel ECG chip and Bluetooth 5.0 processor (Nordic nRF528XX) and power management system. The KSECG-DK board integrates the KS1081 single-channel ECG chip with a Bluetooth 5.0 processor (Nordic nRF528XX) and a power management system. Users touch the printed metal electrodes on the board or connect the lead wires to the electrodes to realize high-precision ECG signal (R-Q-R-S-T wave) acquisition and real-time human fingertip high-fidelity ECG waveform display and signal analysis through Bluetooth data transmission and cell phone APP software.
 
-![KSECG-DKO1E](assets/KSECG-DKO1E.png)
+<div align=center><img src="assets/KSECG-DKO1E.png"></div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KSECG-DK 是一款二合一的蓝牙心电评估开发板。支持指尖接触金属电极获取信号，以及支持通过专用心电 ECG 导联线使用传统 AgCI 电极或其他织物、金属、导电布电极从人体获取高精度心电 ECG 信号进行评测。用户可以在淘宝店铺购买该产品，商品链接：[KS1081手指心电指尖蓝牙无线ECG开发心率数据采集SDK算法手机app](https://item.taobao.com/item.htm?id=621624018377&spm=a1z10.1-c.w4004-22915527887.4.23164e45hSs0N4)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KSECG-DK is a 2-in-1 Bluetooth ECG evaluation development board. It supports fingertip contact with metal electrodes to obtain signals, as well as supporting the use of traditional AgCI electrodes or other fabric, metal, conductive cloth electrodes from the human body to obtain high-precision ECG signals for evaluation through a dedicated ECG leadwire. Users can buy this product in Taobao store, product link: [KS1081 Finger ECG fingertip Bluetooth wireless ECG development heart rate data acquisition SDK algorithm cell phone app](https://item.taobao.com/item.htm?id=621624018377&spm=a1z10.1-c.w4004-22915527887.4.23164e45hSs0N4)
 
-![KSECG-DKO1E](assets/KS1081手指心电指尖蓝牙无线ECG开发心率数据采集SDK算法手机app.png)
-
-
-
-
-# 2.监测指标
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在评估心脏健康和生理状态时，心率（HR）及其衍生指标起着关键作用。心率，即心跳次数每分钟，是心脏活动强度的直接反映。心率变异性（HRV）显示心脏对生理和环境变化的适应性，通过检测心跳间隔的波动来衡量。心电图上的QTc间期，校正后的心室去极化和复极化时间，是不同心率下心脏功能比较的重要指标。压力指数，基于HRV参数，如 LF/HF 比率，评估自主神经系统活动，反映个体的压力水平。这些指标综合提供了心脏健康和压力状态的全面监测。
-
-(1) [心率](https://baike.baidu.com/item/%E5%BF%83%E7%8E%87/9517637)（HR，Heart rate）
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;心率是指心脏收缩跳动的频率和每分钟跳动的次数，正常人平静时（静息心率）每分钟60到100次（60~100 bpm(次/分钟)），运动时心跳会加速，心肺功能较好的运动员会比正常人的心跳要慢。
-
-(2) [心率变异性](https://baike.baidu.com/item/%E5%BF%83%E7%8E%87%E5%8F%98%E5%BC%82%E6%80%A7/4437748)（HRV，Heart Rate Variability）
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;心率变异性是指逐次心跳周期差异的变化情况，它含有神经体液因素对心血管系统调节的信息，从而判断其对心血管等疾病的病情及预防，可能是预测心脏性猝死和心律失常性事件的一个有价值的指标。
-
-(3) [QTc间期](https://baike.baidu.com/item/QTc%E9%97%B4%E6%9C%9F/5874856)（QTc，QTc interval）
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QT 间期是心电图上从QT 波段开始到 T 波段结束的时间，它代表心脏心室去极化和复极化的总时间。QT 间期会随心率的变化而变化，因此通常使用 QTc 值来表示校正后的 QT 间期，以便在不同心率下进行比较。QTc 的异常延长或缩短都可能是心脏疾病的风险因素。
-
-(4) [压力指数]()（Stress）
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;压力指数是通过分析心率变异性来评估个体的压力水平。它基于心率变异性参数，如低频/高频比率(LF/HF 比率)等，这些参数可以反映自主神经系统的活动状态。自主神经系统控制着身体的无意识活动，如心跳和呼吸。压力指数较高通常意味着较高的心理或生理压力水平。
+<div align=center><img src="assets/KS1081手指心电指尖蓝牙无线ECG开发心率数据采集SDK算法手机app.png"></div>
 
 
 
-# 3.APP页面展示
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP页面设计直接影响用户体验和功能认知。本应用的主要页面包括欢迎、注册登录、监测、报告和个人主页，旨在提供直观和便捷的使用体验。
+# 2. Monitoring Indicators
 
-## 3.1 欢迎、注册和登录页面
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Heart rate (HR) and its derivatives play a key role in assessing cardiac health and physiologic status. Heart rate, or the number of heartbeats per minute, is a direct reflection of the intensity of cardiac activity. Heart rate variability (HRV) shows the heart's adaptability to physiologic and environmental changes and is measured by detecting fluctuations in heartbeat intervals. The QTc interval on the electrocardiogram, corrected for ventricular depolarization and repolarization times, is an important indicator of comparative cardiac function at different heart rates. Stress indices, based on HRV parameters such as the LF/HF ratio, assess autonomic nervous system activity and reflect an individual's stress level. Together, these metrics provide a comprehensive monitoring of cardiac health and stress status.
+
+(1) [Heart rate](https://baike.baidu.com/item/%E5%BF%83%E7%8E%87/9517637) (HR, Heart rate)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Heart rate refers to the frequency of the heart's contraction beats and the number of beats per minute, the normal person is calm (resting heart rate) of 60 to 100 beats per minute (60~100 bpm (beats per minute)), the heartbeat will be accelerated when exercising, and the athlete with a better cardiorespiratory function will have a slower heart rate than normal.
+
+(2) [Heart Rate Variability](https://baike.baidu.com/item/%E5%BF%83%E7%8E%87%E5%8F%98%E5%BC%82%E6%80%A7/4437748) (HRV, Heart Rate Variability)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Heart Rate Variability refers to the change in heartbeat cycle-by-cycle difference, which contains information on the regulation of the cardiovascular system by neurohumoral factors, thus determining its condition and prevention of cardiovascular and other diseases, and may be a predictor of sudden cardiac death and arrhythmic events as a valuable indicator for predicting sudden cardiac death and arrhythmic events.
+
+(3) [QTc interval](https://baike.baidu.com/item/QTc%E9%97%B4%E6%9C%9F/5874856) (QTc, QTc interval)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QT interval is the time from the beginning of the QT band to the end of the T band on the electrocardiogram, which represents the total time for the heart's ventricles to depolarize and repolarize. QT intervals vary with heart rate, and therefore the QTc value is often used to represent the corrected QT interval for comparison at different heart rates. Abnormal prolongation or shortening of the QTc may be a risk factor for heart disease.
+
+(4) [Stress Index] () (Stress)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Stress Index assesses an individual's stress level by analyzing heart rate variability. It is based on heart rate variability parameters such as the low frequency/high frequency ratio (LF/HF ratio), which reflect the state of activity of the autonomic nervous system. The autonomic nervous system controls unconscious activities of the body, such as heartbeat and breathing. A higher stress index usually means a higher level of psychological or physical stress.
+
+
+
+
+# 3. APP page display
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP page design directly affects user experience and functional cognition. The main pages of this application include welcome, registration and login, monitoring, reporting and personal homepage, aiming to provide an intuitive and convenient user experience.
+
+## 3.1 Welcome, Registration and Login Pages
 <div align="center" style="display:flex;">
-    <img src="assets/欢迎页面.jpg" style="width:32%;">
+<img src="assets/欢迎页面.jpg" style="width:32%;">
     <div style="width:2%;"></div>
     <img src="assets/注册页面.jpg" style="width:32%;">
     <div style="width:2%;"></div>
@@ -47,9 +48,9 @@
 </div>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首次启动应用时，您将看到欢迎页面，持续3秒或点击右上角"跳过"按钮，即可快速进入"监测"主页。注册和登录请使用手机号码，并勾选同意相关政策和隐私协议。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When you first start the app, you will see the welcome page for 3 seconds or click the "Skip" button in the upper right corner to quickly enter the "Monitoring" homepage. Please use your mobile phone number to register and log in, and check to agree to the relevant policies and privacy agreements.
 
-## 3.2 监测主页
+## 3.2 Monitoring Home Page
 <div align="center" style="display:flex;">
     <img src="assets/监测主页.jpg" style="width:48%;">
     <div style="width:2%;"></div>
@@ -57,7 +58,7 @@
 </div>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"监测"主页直观显示用户基本信息和上次测量结果。点击"开始测量"，即可跳转至心率测量页面。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The "Monitoring" home page intuitively displays the user's basic information and the last measurement results. Click "Start Measurement" to jump to the heart rate measurement page.
 
 <div align="center" style="display:flex;">
     <img src="assets/实时监测数据.jpg" style="width:48%;">
@@ -66,7 +67,7 @@
 </div>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在测量页面，先连接设备，然后点击"测量"按钮，即可开始心率监测。测量时，心电图、监测指标和倒计时将实时展示。完成后，系统将自动生成并展示测量报告。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On the measurement page, first connect the device, then click the "Measure" button to start heart rate monitoring. During measurement, the electrocardiogram, monitoring indicators and countdown will be displayed in real time. After completion, the system will automatically generate and display the measurement report.
 
 <div align="center" style="display:flex;">
     <img src="assets/设备蓝牙连接.jpg"  style="width:28%;">
@@ -76,7 +77,7 @@
     <img src="assets/测量报告.jpg"  style="width:40%;">
 </div>
 
-## 3.3 报告主页
+## 3.3 Report Home Page
 <div align="center" style="display:flex;">
     <img src="assets/报告页面.jpg"  style="width:32%;">
     <div style="width:2%;"></div>
@@ -86,7 +87,7 @@
 </div>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"报告"主页包含心率记录、ECG 心电图、健康知识及疾病预防四个部分。心率记录以表格形式展示每次测量的报告。ECG 心电图支持左右滑动和缩放，方便查看心电图动态。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The "Report" homepage includes four parts: heart rate record, ECG, health knowledge and disease prevention. The heart rate record displays the report of each measurement in a table. The ECG supports left and right sliding and zooming, which is convenient for viewing the dynamic ECG.
 
 <div align="center" style="display:flex;">
     <img src="assets/健康知识.jpg" style="width:32%;">
@@ -97,9 +98,9 @@
 </div>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;健康知识页面提供与心率相关的丰富资讯，而疾病预防部分则聚焦于心脏健康，提供一系列针对性的预防策略和建议。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Health Knowledge page provides a wealth of information related to heart rate, while the Disease Prevention section focuses on heart health and provides a series of targeted prevention strategies and suggestions.
 
-## 3.4 我的主页
+## 3.4 My Homepage
 
 <div align="center" style="display:flex;">
     <img src="assets/我的页面.jpg" style="width:32%;">
@@ -110,8 +111,7 @@
 </div>
 <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"我的"主页为用户提供了全面控制权，包括个人资料、应用设置和账号管理。用户可以轻松更换头像、更新信息、调整测量设置、升级应用、更改密码、管理账号、清理缓存、提交问题反馈以及安全退出登录。
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The "My" homepage provides users with full control, including personal information, application settings, and account management. Users can easily change avatars, update information, adjust measurement settings, upgrade applications, change passwords, manage accounts, clear caches, submit problem feedback, and log out safely.
 
 <div align="center" style="display:flex;">
     <img src="assets/测量设置.jpg" style="width:32%;">
@@ -123,62 +123,58 @@
 <br>
 
 
-# 3.数据存储
+# 4. Data storage
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本应用在运行过程中，将自动生成并存储数据至内置的 SQLite 数据库，即 HeartGuard.db。这些数据分布在四张结构化的表中，确保了数据的有序性和易于管理。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When running, this application will automatically generate and store data in the built-in SQLite database, namely HeartGuard.db. These data are distributed in four structured tables to ensure the orderliness and easy management of the data.
 
+<br> (1) **User Information Table** (UserInfo) is used to store basic information of users.
+| Column name         | Data type | Description                             |
+| ------------------- | --------- | --------------------------------------- |
+| phone_number        | TEXT      | Primary key, phone number               |
+| avatar_base64       | TEXT      | Base64 string encoded with avatar image |
+| login_password      | TEXT      | Encrypted password field                |
+| user_name           | TEXT      | User name                               |
+| user_gender         | TEXT      | User gender                             |
+| user_birthday       | TEXT      | User birthday                           |
+| user_height         | TEXT      | User height                             |
+| user_weight         | TEXT      | User weight                             |
+| user_wear_pacemaker | TEXT      | Whether the user wears a pacemaker      |
+| feedback            | TEXT      | User feedback information               |
 
-<br>（1）**用户信息表**（UserInfo）用于存储用户的基本信息。
-| 列名                | 数据类型 | 说明                         |
-| ------------------- | -------- | ---------------------------- |
-| phone_number        | TEXT     | 主键，电话号码               |
-| avatar_base64       | TEXT     | 头像图片编码后的Base64字符串 |
-| login_password      | TEXT     | 加密后的密码字段             |
-| user_name           | TEXT     | 用户姓名                     |
-| user_gender         | TEXT     | 用户性别                     |
-| user_birthday       | TEXT     | 用户生日                     |
-| user_height         | TEXT     | 用户身高                     |
-| user_weight         | TEXT     | 用户体重                     |
-| user_wear_pacemaker | TEXT     | 用户是否佩戴起搏器           |
-| feedback            | TEXT     | 用户的反馈信息               |
+<br>(2) The **ConnectedDevices** table is designed to record information between devices and applications.
 
+| Column name          | Data type | Description                      |
+| -------------------- | --------- | -------------------------------- |
+| phone_number         | TEXT      | Primary key, phone number        |
+| device_name          | TEXT      | Device name                      |
+| connect_count        | INTEGER   | Number of connections            |
+| last_connection_time | INTEGER   | Timestamp of the last connection |
 
-<br>（2）**连接设备表**（ConnectedDevices）旨在记录设备与应用程序之间的信息。
+<br>(3) **Real-time monitoring data table** (RealTimeData) is used to capture and store monitoring parameters in heart rate monitoring.
 
-| 列名                 | 数据类型 | 说明                 |
-| -------------------- | -------- | -------------------- |
-| phone_number         | TEXT     | 主键，电话号码       |
-| device_name          | TEXT     | 设备名称             |
-| connect_count        | INTEGER  | 连接次数             |
-| last_connection_time | INTEGER  | 最后一次连接的时间戳 |
+| Column name              | Data type | Description                                      |
+| ------------------------ | --------- | ------------------------------------------------ |
+| timestamp                | INTEGER   | Timestamp, used to record the time point of data |
+| hr                       | INTEGER   | Heart rate value                                 |
+| hrv                      | INTEGER   | Heart rate variability                           |
+| qtc                      | INTEGER   | Corrected QT interval                            |
+| stress                   | INTEGER   | Pressure                                         |
+| raw_data_0 ~ raw_data_19 | REAL      | Raw data of the collected electrocardiogram      |
 
+<br>(4) **MeasurementStatistics** is used to store relevant statistical data of heart rate monitoring.
 
-<br>（3）**实时监测数据表**（RealTimeData）用于捕获和存储心率监测中的监测参数。
+| Column name      | Data type | Description                           |
+| ---------------- | --------- | ------------------------------------- |
+| phone_number     | TEXT      | Phone number                          |
+| measurement_time | INTEGER   | Time point of measurement (timestamp) |
+| duration         | TEXT      | Duration of measurement (in seconds)  |
+| min_heart_rate   | INTEGER   | Minimum heart rate                    |
+| avg_heart_rate   | INTEGER   | Average heart rate                    |
+| max_heart_rate   | INTEGER   | Maximum heart rate                    |
+| avg_hrv          | DOUBLE    | Average heart rate variability        |
+| avg_qtc          | DOUBLE    | Average corrected QT interval         |
+| avg_stress       | DOUBLE    | Average stress                        |
 
-| 列名                     | 数据类型 | 说明                         |
-| ------------------------ | -------- | ---------------------------- |
-| timestamp                | INTEGER  | 时间戳，用于记录数据的时间点 |
-| hr                       | INTEGER  | 心率值                       |
-| hrv                      | INTEGER  | 心率变异性                   |
-| qtc                      | INTEGER  | 校正QT间期                   |
-| stress                   | INTEGER  | 压力                         |
-| raw_data_0 ~ raw_data_19 | REAL     | 采集的心电图的原始数据       |
-
-
-<br>（4）**测量统计表**（MeasurementStatistics）用于存储心率监测的相关统计数据。
-
-| 列名             | 数据类型 | 说明                   |
-| ---------------- | -------- | ---------------------- |
-| phone_number     | TEXT     | 电话号码               |
-| measurement_time | INTEGER  | 测量的时间点(时间戳)   |
-| duration         | TEXT     | 测量时长（以秒为单位） |
-| min_heart_rate   | INTEGER  | 最低心率               |
-| avg_heart_rate   | INTEGER  | 平均心率               |
-| max_heart_rate   | INTEGER  | 最高心率               |
-| avg_hrv          | DOUBLE   | 平均心率变异性         |
-| avg_qtc          | DOUBLE   | 平均校正QT间期         |
-| avg_stress       | DOUBLE   | 平均压力               |
-
-# 4.安装包下载
-链接: http://47.121.198.148:1024/share/LnQCMXTbYsfWyMiZymcm <br>
-提取码: GNfA7
+# 5. Download the installation package
+Link: http://47.121.198.148:1024/share/LnQCMXTbYsfWyMiZymcm <br>
+Extraction code: GNfA7
